@@ -1,6 +1,5 @@
 - 👋 Hi, I’m @pp0236
 - my discord pp021#9092
-- im java dev
 - done ez
 
 ### My status
