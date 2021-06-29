@@ -1,3 +1,10 @@
+<p align="center">
+    <img src="https://discord.c99.nl/widget/theme-1/708198820995006475.png"/>
+</p>
+<p align="center">
+	  <img alt="Visitors" src="https://komarev.com/ghpvc/?username=pp0236&style=flat&labelColor=black&logo=github&label=Profile+Views&color=0d8ce0"/>
+</p>
+
 ### iNfO
 - 👋 Hi, I’m @pp0236
 - my discord pp021#9092
