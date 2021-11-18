@@ -10,7 +10,7 @@
 - my discord pp021#9092
 - done ez
 
-### My status ez
+### My statussssssssssssssss
 <p align="center">
 <img src="https://github-readme-stats.vercel.app/api?username=pp0236&&show_icons=true&title_color=df36d8&icon_color=bb2acf&text_color=05f0f7&bg_color=151515&hide_border=true">
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pp0236&layout=compact&theme=bear&bg_color=151515&title_color=df36d8&icon_color=bb2acf&text_color=05f0f7&hide_border=true"/>
