@@ -8,7 +8,13 @@
 ### iNfO
 - 👋 Hi, I’m @pp0236
 - my discord pp021#9092
+- just some java developer (1 year dev experience)
 - done ez
+
+### language that i can do (11/22/2021)
+- java (1 year)
+- nodejs (8 month)
+- py (2 month)
 
 ### My statussssssssssssssss
 <p align="center">
