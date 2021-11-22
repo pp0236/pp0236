@@ -12,7 +12,7 @@
 - done ez
 
 ### language that i can do (11/22/2021)
-- java (1 year)
+- java (1.6 year)
 - nodejs (8 month)
 - py (2 month)
 
