@@ -11,10 +11,11 @@
 - just some java developer (1 year dev experience)
 - done ez
 
-### language that i can do (11/22/2021)
-- java (1.6 year)
-- nodejs (8 month)
-- py (2 month)
+### language that i can do (12/14/2021)
+- java (1.7 year)
+- c# (1 week)
+- ~nodejs (8 month)~ unused
+- ~python (2 month)~ no more
 
 ### My statussssssssssssssss
 <p align="center">
