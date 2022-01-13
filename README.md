@@ -10,12 +10,14 @@
 - my discord pp021#9092
 - just some java developer (1 year dev experience)
 - also ~~LaZy~~
-
+- java c# node js
+<!---
 ### language that i can do (12/14/2021)
 - java (1.7 year)
 - c# (1 week)
 - ~nodejs (8 month)~ unused
 - ~python (2 month)~ no more
+--->
 
 ### My stupid status
 <p align="center">
