@@ -8,9 +8,7 @@
 ### -
 - 👋 Hi, I’m @pp0236
 - my discord pp021#9092
-- just some java developer (1 year dev experience)
-- also ~~LaZy~~
-- java c# node js
+
 <!---
 ### language that i can do (12/14/2021)
 - java (1.7 year)
