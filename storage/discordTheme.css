@@ -1,0 +1,257 @@
+/*
+	Unrestrict max width of message link previews, and probably a lot of other stuff I don't care :trolley:
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1069343882107695305
+*/
+[class^=embedFull] > [class^=gridContainer] {
+	max-width: 100%;
+}
+
+/*
+	Make the message bar consistent with the profile menu across the bottom of the client
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1063871356904681612
+*/
+.form-3gdLxP {
+	padding: 0px;
+}
+
+.channelTextArea-1VQBuV {
+	margin-bottom: 0px;
+}
+
+/* Make the height consistent */
+.inner-NQg18Y {
+	padding-top: 4px;
+	min-height: 49px;
+}
+
+/* Move the slowmode/typing indicator */
+.base-3bcbY3 {
+	top: -24px;
+	left: 0px;
+	width: fit-content;
+	padding-right: 9px;
+	border-radius: 0 8px 0 0;
+	background-color: var(--channeltextarea-background);
+}
+
+.scrollableContainer-15eg7h {
+	border-radius: 0px;
+	min-height: 53px;
+}
+
+/*
+The below influences the settings button, optional but makes the line consistent
+across the entire client
+*/
+/* Move settings (3rd, hence :nth-child(3)) button */
+.container-YkUktl:last-of-type>.flex-2S1XBF.flex-3BkGQD :nth-child(3) {
+	position: fixed;
+	bottom: 10px;
+	left: 20px;
+}
+
+/* Decrease height of server list to make room for settings button */
+.guilds-2JjMmN {
+	margin-bottom: 53px;
+}
+
+/* Make the background distinct */
+.container-1eFtFS {
+	background: var(--background-secondary);
+}
+
+/*
+	blurred context menus
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1071511416995061781
+*/
+[class^=menu-],[class^=submenu-] {
+	background: none;
+}
+[class^=submenu-] {
+	margin: 0 -8px;
+}
+.theme-dark [class^=menu-]::after,.theme-dark [class^=submenu-]::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	border-radius: 5px;
+	background: rgba(10, 10, 10, 0.7);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+}
+.theme-light [class^=menu-]::after,.theme-light [class^=submenu-]::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	border-radius: 5px;
+	background: rgba(245, 245, 245, 0.7);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+}
+[class^=backdrop-] ~ .theme-light[class*=layer-]>[class^=menu-] {
+	background: rgba(245, 245, 245, 0.7);
+}
+[class^=backdrop-] ~ .theme-dark[class*=layer-]>[class^=menu-] {
+	background: rgba(10, 10, 10, 0.7);
+}
+[class^=backdrop-] ~ [class*=layer-]>[class^=menu-]::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	backdrop-filter: blur(10px);
+	border-radius: 5px;
+	box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+}
+.section-3FmfOT, .divider-1tWBgZ, .scroller-1jBQYo {
+	z-index: 2;
+}
+
+/*
+	makes the home icon similar to the one on the mobile app :trolley: 
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1075840997247963197
+*/
+svg[class^="homeIcon"] path {
+	d: path('M 2 0 a 2 2 90 0 0 -2 2 v 12 a 2 2 90 0 0 2 2 h 2 l 0 4 l 4 -4 H 18 a 2 2 90 0 0 2 -2 V 2 a 2 2 90 0 0 -2 -2 z');
+}
+svg[class^="homeIcon"] {
+	margin-left: 8px;
+}
+
+/*
+	macos/linux like window controls for windows
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1086146447524761633
+*/
+.withFrame-2dL45i {
+   height: 20px;
+}
+.typeWindows-2-g3UY .winButton-3UMjdg > svg {
+	display: none;
+}
+.typeWindows-2-g3UY .winButton-3UMjdg {
+	top: 0;
+	width: 12px;
+	height: 12px;
+	margin: 2px 12px 0px 0px;
+	border-radius: 12px;
+}
+.typeWindows-2-g3UY .winButton-3UMjdg::after {
+	content: '';
+	height: 12px;
+	width: 12px;
+	border-radius: 12px;
+}
+.typeWindows-2-g3UY .winButtonClose-3Q8ZH5::after {
+	background-color: hsl(0, 50%, 50%) !important;
+}
+.typeWindows-2-g3UY .winButtonMinMax-3RsPUg:nth-child(3)::after {
+	background-color: hsl(120, 50%, 50%) !important;
+}
+.typeWindows-2-g3UY .winButtonMinMax-3RsPUg:nth-child(4)::after {
+	background-color: hsl(50, 50%, 50%) !important;
+}
+.typeWindows-2-g3UY > div:hover::after {
+	transform: scale(1.1);
+}
+.typeWindows-2-g3UY > div:active::after {
+	transform: scale(1);
+}
+
+/*
+	Gives the update notification it's green tint back.
+	I always forget to update because i don't see the notification.
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1088368791391572018
+*/
+.vc-notification-root {
+	background-color: #248046 !important;
+}
+.vc-notification-close-btn {
+	color: white !important;
+}
+
+/*
+	Removes the login artwork (it looks bad, especially with themes)
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1089262252827349123
+*/
+/* remove login artwork */
+svg.artwork-L5TAwQ {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+/*
+	Better alignment between user info panel and channel text area: https://gist.github.com/aaxyria/f48953bb921da910add776425942575d
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1089356175549681808
+*/
+@import url("https://gist.github.com/aaxyria/f48953bb921da910add776425942575d");
+
+/*
+	revert whatever the fuck these new pleading emotes are (see image) to the old ones
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1090380225742909550
+*/
+.emoji[alt="🥹"] {
+	content: url("https://vendicated.github.io/random-files/face_holding_back_tears.svg");
+}
+
+.emoji[alt="🥺"] {
+	content: url("https://vendicated.github.io/random-files/pleading_face.svg");
+}
+
+/*
+	Verical golive screen selection (screenshare)
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1091785396700074004
+*/
+.sourceContainer-1uqUbz {
+	flex-direction: column;
+}
+.sourceName-3Wf8QG {
+	width: unset;
+}
+.tile-3POX2m > .flex-2S1XBF {
+	flex-direction: row;
+	justify-content: start;
+}
+.tile-3POX2m > .flex-2S1XBF > .flex-2S1XBF {
+	flex: unset !important;
+	margin-right: 16px;
+}
+
+/*
+	Same thing but with a transition and shows if you hover anywhere on the message instead of only the timestamp itself
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1092155597211836547
+*/
+[class*=timestampInline-] {
+  opacity: 0;
+  transition: 0.2s opacity ease-in-out;
+}
+
+[class^=message-]:hover [class*=timestampInline-] {
+  opacity: 1;
+}
+
+/*
+	no one cares about your stupid leaf badge
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1092227930760937483
+*/
+[class^="newMemberBadge"] { display: none }
+
+/* 
+	Makes messages slide into chat 
+	Try changing the second value '0.6s' and fiddle around with it to change the speed
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1092387841515991122
+*/
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+.message-2CShn3 {
+	animation: slide-up 0.6s ease;
+}
