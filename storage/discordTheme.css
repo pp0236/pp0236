@@ -323,8 +323,7 @@ div#app-mount::after {
 	margin: auto;
 	margin-top: 2px;
 	pointer-events: none;
-	text-align: center;
-	left: 50% !important;
+	left: 45% !important;
 	top: -5px;
 	position: absolute;
 }
