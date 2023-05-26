@@ -309,7 +309,7 @@ div#app-mount::after {
 }
 
 /*
-	i love bandicam
+	i love bandicam (edit)
 	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1110262945927147583
 */
 [class*="titleBar"]::after {
@@ -323,8 +323,9 @@ div#app-mount::after {
 	margin: auto;
 	margin-top: 2px;
 	pointer-events: none;
-	left: 530px !important;
-	top: -3px;
+	text-align: center;
+	left: 50% !important;
+	top: -5px;
 	position: absolute;
 }
 
