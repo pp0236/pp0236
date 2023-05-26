@@ -234,3 +234,122 @@ svg.artwork-L5TAwQ {
 .message-2CShn3 {
 	animation: slide-up 0.16s ease;
 }
+
+/*
+	nicer folders
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1108085046272860250
+*/
+path[d="M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5V19C2 20.104 2.895 21 4 21H20C21.104 21 22 20.104 22 19V9C22 7.896 21.104 7 20 7Z"] {
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2;
+	d: path("m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2");
+}
+
+/*
+	might add (custom username color)
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1108322926421348403
+*/
+
+/*
+	glowing current speaker rings
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1108849839757852692
+*/
+.avatarSpeaking-2pCGrZ {
+	border: 2.5px solid rgb(44, 200, 106);
+	box-shadow: 0px 0px 6px rgb(0, 16, 3),  0px 0px 20px rgb(44, 200, 106),  0px 0px 6px rgba(0, 0, 0, 0.953);
+	border-radius: 16px;
+	margin-left: 6px;
+	margin-top: 1px;
+}
+
+/*
+	The original PlatformIndicator felt too big and distracting on the member list for me
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1109063645587054662
+*/
+span.vc-platform-indicator > svg {
+	width: 15px !important;
+	height: 15px !important;
+	fill: var(--brand-500) !important; /* whatever color */
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+div.profileBadges-2pItdR.containerWithContent-2Yws8V.container-1gYwHN > span.vc-platform-indicator > svg {
+	width: 20px !important;
+	height: 20px !important;
+	fill: var(--brand-500) !important; /* whatever color */
+}
+
+/*
+	Activate Discord
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1109871258021138432
+*/
+body::after {
+	font-size: 20px;
+	content: "Activate Discord";
+	position: absolute;
+	font-family: 'Noto Sans';
+	color: white;
+	opacity: 0.6;
+	bottom: 40px;
+	right: 82px;
+	pointer-events: none;
+}
+div#app-mount::after {
+	font-size: 14px;
+	content: "Go to settings to activate Discord.";
+	position: absolute;
+	font-family: 'Noto Sans';
+	color: white;
+	opacity: 0.6;
+	bottom: 20px;
+	right: 21px;
+	pointer-events: none;
+}
+
+/*
+	i love bandicam
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1110262945927147583
+*/
+[class*="titleBar"]::after {
+	font-size: 24px;
+	content: "www.Bandicam.com";
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	color: white;
+	opacity: 0.6;
+	font-weight: bold;
+	text-shadow: 0px 0px 10px black;
+	margin: auto;
+	margin-top: 2px;
+	pointer-events: none;
+	left: 530px !important;
+	top: -3px;
+	position: absolute;
+}
+
+/*
+	Disabling Library & Nitro & Birthday Buttons on DM
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1110634698381742101
+*/
+.privateChannels-oVe7HL [href="/store"],[href="/library"],[href="/activities"] {
+	display: none;
+}
+
+/*
+	kys welcome stickers
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1110765066648821821
+*/
+.stickerAsset-4c7Oqy[data-id="749054660769218631"],
+.stickerAsset-4c7Oqy[data-id="781291131828699156"],
+.stickerAsset-4c7Oqy[data-id="819128604311027752"], 
+.stickerAsset-4c7Oqy[data-id="751606379340365864"],
+.stickerAsset-4c7Oqy[data-id="783787234091466793"],
+.stickerAsset-4c7Oqy[data-id="816087792291282944"],
+.stickerAsset-4c7Oqy[data-id="754108890559283200"] {
+	height: 0;
+	width: 0;
+	padding: 50%;
+	background: url(https://media.tenor.com/C8MpzwDxl40AAAAC/ltg-low-tier-god.gif);
+	background-size: contain;
+}
