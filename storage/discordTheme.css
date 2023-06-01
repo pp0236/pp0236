@@ -285,27 +285,25 @@ div.profileBadges-2pItdR.containerWithContent-2Yws8V.container-1gYwHN > span.vc-
 	Activate Discord
 	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1109871258021138432
 */
+body::after, div#app-mount::after {
+	position: absolute;
+	font-family: 'Segoe UI';
+	color: white;
+	opacity: 0.6;
+	pointer-events: none;
+	z-index: 1337;
+}
 body::after {
 	font-size: 20px;
 	content: "Activate Discord";
-	position: absolute;
-	font-family: 'Noto Sans';
-	color: white;
-	opacity: 0.6;
-	bottom: 40px;
-	right: 82px;
-	pointer-events: none;
+	bottom: 111px;
+	right: 167px;
 }
 div#app-mount::after {
-	font-size: 14px;
-	content: "Go to settings to activate Discord.";
-	position: absolute;
-	font-family: 'Noto Sans';
-	color: white;
-	opacity: 0.6;
-	bottom: 20px;
-	right: 21px;
-	pointer-events: none;
+	font-size: 15px;
+	content: "Go to Settings to activate Discord.";
+	bottom: 90px;
+	right: 85px;
 }
 
 /*
