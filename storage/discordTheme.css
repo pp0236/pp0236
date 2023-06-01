@@ -349,3 +349,35 @@ div#app-mount::after {
 	background: url(https://media.tenor.com/C8MpzwDxl40AAAAC/ltg-low-tier-god.gif);
 	background-size: contain;
 }
+
+/*
+	Better channel highlighter
+	https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1113077568015454269
+*/
+/* Original code from hadeanMachine and ArjixWasTaken */
+
+#app-mount .containerDefault-YUSmu3.selected-2TbFuo .content-1gYQeQ {
+	background: #01ff4d3d;
+	border: 2px solid #01ffaab4;
+}
+
+[aria-label="Channels"] [class^="content"] [class^="popout-"] [class^="row-"]
+{
+	border-style: solid;
+	border-width: 2px;  
+	border-color: transparent;
+	background-color: transparent;
+}
+
+[aria-label="Channels"] [class^="content"]:hover [class^="popout-"] [class^="row-"]:hover
+{
+	border-color: #01ffaab4 !important;
+}
+
+.unread-36eUEm {
+	display: none;
+}
+
+.modeUnread-3Cxepe .icon-2W8DHg #app-mount .containerDefault-YUSmu3.selected-2TbFuo .content-1gYQeQ .icon-2W8DHg #app-mount .containerDefault-YUSmu3:hover .content-1gYQeQ .icon-2W8DHg {
+	color: #01ffaab4 !important;
+}
